@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#myImage{
+    max-width: 300px;
+    margin:20px;
+    border-radius: 10px;
+    transition: opacity 0.8s;
+}
+#myImage:hover{
+    opacity: 0.8;
+}
+#myModal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+}
+#img01{
+    max-width: 80%;
+    display: block;
+    margin:auto;
+
+
+}

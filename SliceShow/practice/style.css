@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container-slide{
+    max-width: 1000px;
+    position: relative;
+    margin:10px auto;
+}
+
+.number{
+    position:absolute;
+    color: white;
+    padding: 10px 10px;
+}
+.text{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.prev,.next{
+    position: absolute;
+    top:50%;
+    font-size: 28px;
+    width: 32px;
+    height: 46px;
+    color: white;
+    text-align: center;
+    transition:background-color 0.8s;
+    user-select: none;
+}
+.next{
+    right: 0;
+ }
+ .prev:hover,.next:hover{
+     background-color: rgba(0,0,0,.5);
+ }
+ .dot{
+     display: inline-block;
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+     background-color: #bbb;
+ }
+ .active, .dot:hover{
+     background-color: #717171;
+ }
+
+ .fade{
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 2s;
+     animation-name:fade ;
+     animation-duration: 2s;
+ }
+ @keyframes fade {
+     from{opacity:0.3}
+     to{opacity: 1}
+ }
+ @-webkit-keyframes fade {
+     from{opacity:0.3}
+     to{opacity: 1}
+ }

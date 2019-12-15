@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-slide">
+        <!--Picture-->
+        <div class="slide fade">
+            <div class="number">1 / 6</div>
+            <img src="../w3c/img1.jpg" alt="NoPhoto">
+        </div>
+        <div class="slide fade">
+            <div class="number">2 / 6</div>
+            <img src="../w3c/img2.jpg" alt="NoPhoto">
+        </div>
+        <div class="slide fade">
+            <div class="number">3 / 6</div>
+            <img src="../w3c/img3.jpg" alt="NoPhoto">
+        </div>
+        <div class="slide fade">
+            <div class="number">4 / 6</div>
+            <img src="../w3c/img4.jpg" alt="NoPhoto">
+        </div>
+        <div class="slide fade">
+            <div class="number">5 / 6</div>
+            <img src="../w3c/img5.jpg" alt="NoPhoto">
+        </div>
+        <div class="slide fade">
+            <div class="number">6 / 6</div>
+            <img src="../w3c/img6.jpg" alt="NoPhoto">
+        </div>
+        <!--Button next and previous-->
+        <span class="prev" onclick="plusSlides(-1)">&#10094</span>
+        <span class="next" onclick="plusSlides(1)">&#10095</span>
+
+    </div>
+    <div class="container-caption">
+        <div class="text">Slide One</div>
+        <div class="text">Slide Two</div>
+        <div class="text">Slide Three</div>
+        <div class="text">Slide Four</div>
+        <div class="text">Slide Five</div>
+        <div class="text">Slide Six</div>
+    </div>
+
+        <!--Choose picture-->
+    <div class="row">
+        <div class="column">
+            <img src="../w3c/img1.jpg" alt="NoPhoto" class="dot" onclick="currentSlide(1)">
+        </div>
+        <div class="column">
+            <img src="../w3c/img2.jpg" alt="NoPhoto" class="dot" onclick="currentSlide(2)">
+        </div>
+        <div class="column">
+            <img src="../w3c/img3.jpg" alt="NoPhoto" class="dot" onclick="currentSlide(3)">
+        </div>
+        <div class="column">
+            <img src="../w3c/img4.jpg" alt="NoPhoto" class="dot" onclick="currentSlide(4)">
+        </div>
+        <div class="column">
+            <img src="../w3c/img5.jpg" alt="NoPhoto" class="dot" onclick="currentSlide(5)">
+        </div>
+        <div class="column">
+            <img src="../w3c/img6.jpg" alt="NoPhoto" class="dot" onclick="currentSlide(6)">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
