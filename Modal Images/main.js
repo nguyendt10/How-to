@@ -1,18 +1,17 @@
-const  image = document.getElementById("myImage");
-const  modal = document.getElementById("myModal");
-const image01 = document.getElementById("img01");
+const image = document.getElementById("myImage");
 const close = document.getElementById("myClose");
-const caption = document.getElementsByClassName("myCaption")[0];
+const img = document.getElementById("img01");
+const caption = document.getElementById("myCaption");
+const modal = document.getElementById("myModal");
 
 image.onclick = function () {
-    modal.style.display = "block";
     image.style.display = "none";
+    modal.style.display = "block";
     close.innerHTML = "&times;";
-    image01.src = this.src;
-    caption.innerHTML = this.alt;
+    img.src = image.src;
+    caption.innerHTML = image.alt;
 };
-
 close.onclick = function () {
-    modal.style.display = "none";
     image.style.display = "block";
+    modal.style.display = "none";
 };

@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1000px;
+    margin:auto;
+}
+.topNav{
+    background-color: yellow;
+    width:1000px;
+    position: relative;
+}
+h1{
+    font-size: 60px;
+    background-color: gray;
+    padding: 30px 20px;
+    text-align: center;
+}
+/*Dropdown menu tầng 1*/
+.dropdown{
+    display: inline-block;
+    float:left;
+}
+
+.clearFix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.menu a{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    background-color: #4CAF50;
+    padding: 14px 16px;
+    color: white;
+}
+.submenu{
+    display: none;
+    position: absolute;
+}
+
+.submenu a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    font-size: 20px;
+    padding: 14px 14px;
+    width: 150%;
+    border: 1px solid white;
+
+}
+.dropdown:hover .menu a{
+    background-color: orange;
+    color: black;
+}
+.dropdown:hover .submenu{
+    display: block;
+}
+.submenu a:hover{
+    background-color: orange;
+    color: black;
+}
+/*Dropdown menu tầng 2*/
+.dropdown .submenu .dropdown{
+    float: none;
+    position: relative;
+    width: 100%;
+}
+.dropdown .submenu .dropdown .menu a{
+    background-color: #4CAF50;
+    color: white;
+}
+.dropdown .submenu .dropdown .submenu{
+    position: absolute;
+    top:0;
+    left:150%;
+    width: 80%;
+    display: none;
+    transform: scaleY(.9);
+}
+
+.dropdown .submenu .dropdown .menu a:hover {
+    background-color: orange;
+    color: black;
+}
+.dropdown .submenu .dropdown:hover .submenu{
+    display: inline-block;
+}
+/*Dropdown menu tầng 3*/
+.dropdown .submenu .dropdown .submenu .dropdown {
+    width: 100%;
+}
+.dropdown .submenu .dropdown .submenu .dropdown .submenu{
+    display: none;
+}
+.dropdown .submenu .dropdown .submenu .dropdown:hover .submenu{
+    display: inline-block;
+}
+/*Dropdown tầng 4*/
+.dropdown .submenu .dropdown .submenu .dropdown .submenu .dropdown .submenu{
+    display: none;
+}
+.dropdown .submenu .dropdown .submenu .dropdown .submenu .dropdown:hover .submenu{
+    display: inline-block;
+}
+/*Sticky menu*/
+.sticky{
+    position: fixed;
+    top: 0;
+
+}
+.content{
+    padding-top: 15px;
+}
+.sticky + .content {
+    padding-top: 70px;
+}

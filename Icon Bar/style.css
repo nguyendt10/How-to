@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.menu ul{
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    float: left;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgba(0,0,0,.6);
+    color: white;
+}
+.clearFix::after{
+    content:"";
+    clear:both;
+    display: block;
+}
+.menu a:hover{
+    background-color: black;
+}
+#home{
+    background-color: green;
+}
