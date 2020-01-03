@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.column{
+    width: 25%;
+    float:left;
+    padding:0 10px;
+
+}
+.clearFix::after{
+    content: "";
+    clear:both;
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+.card{
+    padding:16px;
+    text-align: center;
+    box-shadow: 5px 4px 4px 0 rgba(0,0,0,.2);
+}

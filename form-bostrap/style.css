@@ -1,0 +1,395 @@
+.clearFix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.nav-item{
+    background-color:rgb(24, 158, 255);
+    position: relative;
+}
+.nav-item a{
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    height: 50px;
+}
+.nav-item a .fas{
+    font-size: 24px;
+    padding-top: 6px;
+}
+.nav-item:hover a{
+    color: white;
+}
+.nav-item .nav{
+    position: absolute;
+    width: 200%;
+    display: none;
+    top: 120%;
+    left: -50%;
+    background-color: white;
+    border: 1px solid rgb(239, 239, 239);
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0 6px 12px 0;
+}
+.nav-item:hover .nav{
+    display: block;
+}
+.corner{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,0) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    padding: 0;
+    border-top: 1px solid rgb(239, 239, 239);
+    border-left: 1px solid rgb(239, 239, 239);
+}
+.nav-item:hover .corner{
+    display: block;
+}
+.register{
+    margin-top: 10px;
+    background-color: white;
+}
+.register a{
+    text-align: center;
+    padding-top: 15px;
+    background-color: rgb(253, 216, 53);
+    color: black;
+    border-radius: 5px;
+}
+
+.nav-item:hover .register a{
+    color: black;
+}
+.nav-item .register a:hover{
+    opacity: .8;
+}
+/*----------------------register-fa----------------------*/
+.register-fa{
+    margin-top: 10px;
+    background-color: white;
+}
+.register-fa a{
+    text-align: center;
+    background-color: rgb(59, 89, 152);
+    color: white;
+    border-radius: 5px;
+    padding: 0;
+}
+.register-fa .fab{
+    font-size: 20px;
+}
+.face-logo{
+    display: inline-block;
+    width: 20%;
+    float: left;
+    border-right: 1px solid rgba(21, 47, 118, 0.5);
+    height: 100%;
+    padding-top: 16px;
+}
+.face-content{
+    display: inline-block;
+    width: 80%;
+    padding-top: 16px;
+}
+.nav-item .register-fa a:hover{
+    opacity: .8;
+}
+/*---------------------------register-google----------------------*/
+.register-google{
+    margin-top: 10px;
+    background-color: white;
+}
+.register-google a{
+    text-align: center;
+    background-color: rgb(223, 74, 50);;
+    color: white;
+    border-radius: 5px;
+    padding: 0;
+}
+.register-google .fab{
+    font-size: 20px;
+}
+.google-logo{
+    display: inline-block;
+    width: 20%;
+    float: left;
+    border-right: 1px solid rgba(21, 47, 118, 0.5);
+    height: 100%;
+    padding-top: 16px;
+}
+.google-content{
+    display: inline-block;
+    width: 80%;
+    padding-top: 16px;
+}
+.nav-item .register-google a:hover{
+    opacity: .8;
+}
+/*---------------------------register-zalo--------------*/
+.register-zalo{
+    margin-top: 10px;
+    background-color: white;
+}
+.register-zalo a{
+    text-align: center;
+    background-color: rgb(15, 142, 221);
+    color: white;
+    border-radius: 5px;
+    padding: 0;
+}
+.register-zalo .fab{
+    font-size: 20px;
+}
+.zalo-logo{
+    display: inline-block;
+    width: 20%;
+    float: left;
+    border-right: 1px solid rgba(21, 47, 118, 0.5);
+    height: 100%;
+    padding-top: 16px;
+}
+.zalo-content{
+    display: inline-block;
+    width: 80%;
+    padding-top: 16px;
+}
+.nav-item .register-zalo a:hover{
+    opacity: .8;
+}
+/*------------------------form-register----------------------*/
+.form-register{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,.7);
+    display: none;
+}
+.form-register .row{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    top: 50px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.form-register .row .col-5{
+    padding: 30px 60px 60px 30px;
+}
+.form-register .row .col-5 h1{
+    font-size: 32px;
+    font-weight: 300;
+}
+.form-register .row .col-5 p{
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+.form-register .row .col-7{
+    border: 15px solid rgb(248, 248, 248);
+    padding: 10px;
+}
+.form-register .row .col-7 .menu p{
+    display: inline-block;
+    width: 30%;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.form-register .row .col-7 .menu :first-child{
+    color: rgb(27, 168, 255);
+    border-bottom: 3px solid rgb(27, 168, 255);
+}
+.form-register .Close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(248, 248, 248);
+    transform: translate(50%,-50%);
+    border-radius: 100%;
+    width: 24px;
+    text-align: center;
+    color: gray;
+    border: 1px solid rgba(0,0,0,.5);
+}
+.form-register .Close:hover{
+    background-color: #F8EAD7;
+}
+.form-register .register-button{
+    margin-left: 20%;
+    width: 80%;
+    background-color: rgb(253, 216, 53);
+    font-size: 16px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.form-register .register-button:hover{
+    opacity: .8;
+}
+/*---------------------form-register-content--------------------*/
+.form-register .nav-item .nav{
+    display: inline-block;
+    width: 80%;
+    top:0;
+    left: 20%;
+    box-shadow: 0 0 0 0 white;
+    border: none;
+    padding: 0;
+}
+.form-register .col-7 .container p{
+    margin-left:20%;
+    font-size: 12px;
+    padding-top: 15px;
+}
+.form-inline{
+    margin-top:15px;
+    line-height: 30px;
+}
+.form-inline label{
+    width: 20%;
+    display: inline-block;
+    font-size: 13px;
+}
+.form-inline input.form-control{
+    width: 80%;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+    padding-left: 10px;
+}
+/*------------------------form-creatAccount----------------------*/
+.form-creatAccount{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,.7);
+    display: none;
+}
+.form-creatAccount .row{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    top: 50px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.form-creatAccount .row .col-5{
+    padding: 30px 60px 60px 30px;
+}
+.form-creatAccount .row .col-5 h1{
+    font-size: 32px;
+    font-weight: 300;
+}
+.form-creatAccount .row .col-5 p{
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+.form-creatAccount .row .col-7{
+    border: 15px solid rgb(248, 248, 248);
+    padding: 10px;
+}
+.form-creatAccount .row .col-7 .menu p{
+    display: inline-block;
+    width: 30%;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.form-creatAccount .row .col-7 .menu :last-child{
+    color: rgb(27, 168, 255);
+    border-bottom: 3px solid rgb(27, 168, 255);
+}
+.form-creatAccount .Close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(248, 248, 248);
+    transform: translate(50%,-50%);
+    border-radius: 100%;
+    width: 24px;
+    text-align: center;
+    color: gray;
+    border: 1px solid rgba(0,0,0,.5);
+}
+.form-creatAccount .Close:hover{
+    background-color: #F8EAD7;
+}
+.form-inline input#phoneNumber{
+    width: 50%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.form-inline button#sendCode{
+    width: 30%;
+    background-color: rgb(253, 216, 53);
+    background-clip: border-box;
+    border:1px solid rgb(253, 216, 53);
+    font-size: 13px;
+    font-weight: 400;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline:none;
+}
+.form-inline button#sendCode:hover{
+    opacity: .8;
+}
+.form-inline input[type=radio]{
+    width: 5%;
+}
+.form-inline input[value=Nữ]{
+    margin-left: 25%;
+}
+.form-creatAccount span{
+    font-size: 13px;
+}
+.form-inline select.form-control{
+    width: 24%;
+    margin-right: 4%;
+    font-size: 13px;
+}
+.form-inline select.form-control:last-child{
+    margin: 0;
+}
+.form-group{
+    margin-left:20%;
+}
+.form-group input[type=checkbox]{
+    padding-top: 5px;
+}
+form button#creatAccount{
+    width: 80%;
+    background-color: rgb(253, 216, 53);
+    background-clip: border-box;
+    border:1px solid rgb(253, 216, 53);
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 5px;
+    outline:none;
+    margin-left: 20%;
+    line-height: 30px;
+}
+form button#creatAccount:hover{
+    opacity: .8;
+}
+.form-creatAccount .col-7 .container p{
+    font-size: 13px;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
